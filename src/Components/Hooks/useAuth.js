@@ -51,7 +51,7 @@ initializeAuthentication()
  const verifyEmail = () => {
   sendEmailVerification(auth.currentUser)
 .then(result => {
-  console.log(result)
+  console.log(result.user)
 })
  }
 //   handle email and password
@@ -67,10 +67,9 @@ initializeAuthentication()
          createUserWithEmailAndPassword(auth, email, password)
   .then((result) => {
      const user = result.user;
-     setUser(user)
-     console.log(user)
      setUserName();
-      verifyEmail();
+     verifyEmail();
+     setUser(user) 
    })
   .catch((error) => {
       setError(error.message);

@@ -23,15 +23,13 @@ function App() {
             <Route exact path="/">
               <Home></Home>
               <AboutUs></AboutUs> 
-              <Doctors></Doctors>
-              <Contact></Contact> 
+              <Doctors></Doctors> 
             </Route>
             <Route path="/home">
               <Home></Home>
                <AboutUs></AboutUs>
                <Doctors></Doctors>
-               <Contact></Contact> 
-            </Route>
+             </Route>
             <Route path='/Contact'>
         <Contact></Contact> 
               </Route>

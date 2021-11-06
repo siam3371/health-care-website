@@ -7,6 +7,7 @@ import UseAuthContext from '../Hooks/UseAuthContext';
  
 const Header = () => { 
   const {user, logOut} = UseAuthContext()
+  console.log(user)
        return ( 
 <div>
 <>
@@ -19,12 +20,11 @@ const Header = () => {
     <Nav.Link as={Link} to="/home"  className="brand">Home</Nav.Link>
       <Nav.Link as={Link} to="/aboutUs" className="brand">About Us</Nav.Link>
       <Nav.Link as={Link} to="/doctors" className=" brand ">Doctors</Nav.Link>
-      <Nav.Link as={Link} to="/Contact" className=" brand ">Contact</Nav.Link>
-      <Navbar.Text>
+       <Navbar.Text>
         {/* {user.email ? <button>LogOut</button> : ''  } */}
         {user.email ?   <Button onClick={logOut} variant="light">LogOut</Button> :    <button className="light">Login</button>   }
 
-        Signed in as: <a className="a-style" href="#login">{user.displayName}</a>
+        Signed in as: <a className="a-style text-danger" href="#login">{user.displayName}</a>
       </Navbar.Text>
     </Navbar.Collapse> 
     </Container>
