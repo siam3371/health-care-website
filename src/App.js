@@ -22,14 +22,10 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home></Home>
-              <AboutUs></AboutUs> 
-              <Doctors></Doctors> 
-            </Route>
+             </Route>
             <Route path="/home">
               <Home></Home>
-               <AboutUs></AboutUs>
-               <Doctors></Doctors>
-             </Route>
+               </Route>
             <Route path='/Contact'>
         <Contact></Contact> 
               </Route>
