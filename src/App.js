@@ -12,7 +12,7 @@ import Login from './Components/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import Register from './Components/Register/Register';
-
+     
 function App() {
   return (
     <div>
