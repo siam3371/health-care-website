@@ -15,7 +15,7 @@ import Register from './Components/Register/Register';
         
 function App() {
   return (
-    <div>
+    <div> 
       <AuthProvider> 
         <Router>
           <Header></Header>
